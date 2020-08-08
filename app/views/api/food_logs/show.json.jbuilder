@@ -1,0 +1,1 @@
+json.partial! @food_log, partial: 'food_log', as: :food_log
