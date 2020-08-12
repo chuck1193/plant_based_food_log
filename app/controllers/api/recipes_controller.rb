@@ -32,7 +32,7 @@ class Api::RecipesController < ApplicationController
     @recipe.instructions = params[:instructions] || @recipe.instructions
   end
 
-  def deetroy
+  def destroy
     recipe = Recipe.find(params[:id])
     recipe.destroy
     render json: {message: 'Succesfully Destroyed Recipe'}
